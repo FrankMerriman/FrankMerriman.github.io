@@ -3,6 +3,7 @@ a {
     font-family: 'Courier New', monospace;
     font-size: 25px;
     display: block;
+    display: -moz-box;
 }
 
 a:hover {
