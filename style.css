@@ -2,6 +2,7 @@ a {
     color: #666666;
     font-family: 'Courier New', monospace;
     font-size: 25px;
+    display: block;
 }
 
 a:hover {
