@@ -1,7 +1,11 @@
 a {
-    color: #e91d63;
+    color: #666666;
     font-family: 'Courier New', monospace;
     font-size: 25px;
+}
+
+a:hover {
+    color: #e91d63;
 }
 
 h1 {
