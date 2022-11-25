@@ -1,5 +1,9 @@
+body {
+    font-family: 'Courier New', monospace;
+}
+
 h1 {
     color: #424242;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 80px;
 }
