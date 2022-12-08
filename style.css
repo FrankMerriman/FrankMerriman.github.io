@@ -23,13 +23,14 @@
 
 /* The sub elements of the portfolio. They represent each project */
 .portfolio-container > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:gainsboro;
-    font-family: 'Courier New', monospace;
-    text-align: center;
-
+    display: flex; /* Make this a flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Fixes issue where multi-line text not centering */
+    background-color: #e91d6481;
+    border-radius: 15px;
+    font-family: 'Courier-New', monospace;
+    font-size: 30px;
 }
 
 /* Change apperance of portfolio elements when hovered */
