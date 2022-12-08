@@ -9,19 +9,32 @@ a:hover {
     color: #e91d63;
 }
 
-h1 {
+#main-name {
     color: #424242;
     font-family: 'Oswald', sans-serif;
     font-size: 80px;
+    text-align:center;
+    margin: 0 auto;
 }
 
-.portfolio-container > div {
-    border-radius: 5px;
-    padding: 10px;
-    background-color: rgb(207,232,220);
-    border: 2px solid rgb(79,185,227);
+/* The overall grid that displays content tiled
+across the page */
+.portfolio-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, 200px);
     grid-auto-rows: minmax(100px, auto);
     gap: 20px;
+}
+
+/* The sub elements of the portfolio. They represent each project */
+.portfolio-container > div {
+    background-color:gainsboro;
+    font-family: 'Courier New', monospace;
+
+}
+
+.portfolio-container > div:hover {
+    background-color: #e91d63;
+    color: ghostwhite;
+
 }
