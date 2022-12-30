@@ -12,6 +12,8 @@ body {
     left: 5px;
     font-weight: 200;
     font-size: 20px;
+    background: linear-gradient(#f06d06, #ffa800);
+    -webkit-background-clip: text;
 }
   
 #menu-bar ul {
@@ -44,8 +46,6 @@ body {
 
 /* Colour the text when hovered */
 #menu-bar a:hover {
-    background: linear-gradient(to right, #f06d06, #ffa800);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
