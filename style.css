@@ -1,12 +1,113 @@
 
-#main-name {
-    color: #424242;
-    font-family: 'Oswald', sans-serif;
-    font-size: 80px;
-    text-align:center;
+/* Sets the default font and tiles the background image */
+body {
+    background-image: url("img/bg.png");
+    font-family: "Inter", sans-serif;
+}
+
+/* Puts menu bar in top left of screen */
+#menu-bar {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+  
+#menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-bar li {
+    display: inline;
+    
+}
+
+/* Put a | divider before each element in the list */
+#menu-bar li::before {
+    content: "|";
+    padding: 0 10px;
+}
+
+/* Don't print the | before first element in the list */
+#menu-bar li:first-child::before {
+    content: "";
+}
+
+/* Make the menu urls look like normal text */
+#menu-bar a:link {
+    text-decoration: none;
+    color: black;
+}
+
+#menu-bar a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* Colour the text when hovered */
+#menu-bar a:hover {
+    background: linear-gradient(to right, #f06d06, #ffa800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#quick-info {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 20px;
+    max-width: 700px;
     margin: 0 auto;
     padding-top: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 8%;
+    /* background: linear-gradient(to right, #f06d06, #ffa800); */
+    
+}
+
+#main-name {
+    font-weight: 900;
+    font-size: 80px;
+    text-align:center;
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+}
+
+
+#connections {
+    display: grid;
+    max-width: 360px;
+    grid-template-columns: repeat(3, 100px);
+    gap: 20px;
+    margin: 0 auto;
+    /* Figure out how to mask the gradient with the PNGS */
+    /* background: -webkit-linear-gradient(0deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%); */
+    
+}
+
+.connections-icons {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: auto
+    
+}
+
+#art-area {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#art-area > img {
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid black; */
+    /* box-shadow: -10px 10px 3px rgba(0,0,0, 0.8); */
+}
+
+#art-subtitle {
+    font-size: 0.8em;
+    opacity: 0.8;
 }
 
 /* The overall grid that displays content tiled across the page */
@@ -14,7 +115,7 @@
     display: grid; /* Make a grid layout */
     width: 80%; /* Make grid container only occupy 80% of horizontal space */
     margin: auto; /* Automatically ensure container stays in middle of screen */
-    grid-template-columns: repeat(auto-fill, 400px); /* Each column is 400px wide and new columns are constantly generated to fill the avaliable width */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Each column is 400px wide and new columns are constantly generated to fill the avaliable width */
     grid-auto-rows: minmax(200px, auto); /* Each row is 200px tall, but grows to fit content */
     gap: 40px; /* Equal gap above and to the sides of each grid square */
     justify-content: center; /* Make sure grid squares stay in the center of the grid as it resizes */
@@ -38,4 +139,20 @@
     background-color: #e91d63;
     color: ghostwhite;
 
+}
+
+
+/* See the goose */
+#under-construction > img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20vh;
+}
+
+/* Heed its warning */
+#under-construction > p { 
+    text-align: center;
+    font-size: 30;
 }

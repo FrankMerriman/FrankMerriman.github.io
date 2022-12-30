@@ -12,28 +12,61 @@
 
         <!--Downloads custom font from google fonts api-->
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Inter&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Inter:wght@400;900&display=swap');
         </style> 
 	</head>
 
-	<body style="background-color: rgb(253, 248, 241);">
-        <!--Large Name in Center Top of page-->
-        <h1 id="main-name">
-            FRANK MERRIMAN
-        </h1>
+	<body>
+        
+        <!-- Menu bar with links to other parts of website -->
+        <div id="menu-bar">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+            </li>
+              <li>
+                <a href="html/projects.html">Projects</a>
+            </li>
+            <li>
+                <a href="html/about.html">About</a>
+            </li>
+            </ul>
+        </div>
+        
+        <!-- Heading area containing name and socials -->
+        <div id="quick-info">
+            <!-- Use paragraph instead of heading because heading seems to add non-removable padding above and below -->
+            <div id="main-name">
+                Frank Merriman
+            </div>
+            <div id="connections">
+                <div>
+                    <img class="connections-icons" src = "img/email.png" alt="Send email" onclick="window.location.href='mailto:FrankMerriman@outlook.com'">
+                </div>
+                <div>
+                    <img class="connections-icons" src = "img/linkedin.png" alt="Go to LinkedIn profile" onclick="window.open('https://www.linkedin.com/in/frank-merriman/')">
+                </div>
+                <div>
+                    <img class="connections-icons" src = "img/github.png" alt="Go to GitHub profile" onclick="window.open('https://github.com/FrankMerriman')">
+                </div>
+            </div>
+        </div>
+
+        <div id="art-area">
+            <p>
+                Welcome to my website! Have a piece of computer art!
+            </p>
+            <img src = "img/art_sample.png">
+            <p id="art-subtitle">
+                <i>(Remeber: Art is subjective)</i>
+            </p>
+        </div>
+
         
 
-        <!-- First draft of portfolio contents, ultra simple list
-        <div style="text-align:center; margin: 0 auto;">    
-            <a href="https://github.com/FrankMerriman/3331-Networks-Project">Multithreaded Forum Server</a>
-            <a href="https://github.com/FrankMerriman/6841-Something-Awesome">WiFi Pineapple</a>
-            <a href="https://github.com/ChinmayManchanda/9447-Team1">AWS DevSecOps Tools</a> 
-            <a href="https://github.com/FrankMerriman/6841-Tutor-CTFs">Security Engineering CTFs</a>
-            <a href="https://github.com/unsw-cse-comp3900-9900-21T3/capstone-project-3900-h10a-ibuy">E-commerce Website (available on request)</a>
-        </div> -->
         
 
-        <div class="portfolio-container">
+        <!-- <div class="portfolio-container">
 
             <div onclick="window.location.href='https://github.com/FrankMerriman/6841-Something-Awesome';">
                 Raspberry Pi.neapple
@@ -55,7 +88,7 @@
                 iBuy<br>(available on request)
             </div>
 
-        </div>
+        </div> -->
         
 		
 	</body>
