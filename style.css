@@ -12,7 +12,10 @@ body {
     left: 5px;
     font-weight: 200;
     font-size: 20px;
+
     background: linear-gradient(#f06d06, #ffa800);
+
+    background-clip: text;
     -webkit-background-clip: text;
 }
   
@@ -58,6 +61,16 @@ body {
     padding-top: 3%;
     padding-bottom: 8%;
     /* background: linear-gradient(to right, #f06d06, #ffa800); */
+
+    background: linear-gradient(0deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%); /* Legacy support */
+
+    background-clip: text;
+    -webkit-background-clip: text; /* Legacy support */
+
+    /* -webkit-mask-image: url(email.svg); */
+
+    /* clip-path: polygon(0% 87%, 50% 0%, 50% 0%, 100% 87%); */
     
 }
 
@@ -65,8 +78,14 @@ body {
     font-weight: 900;
     font-size: 80px;
     text-align:center;
-    /* -webkit-background-clip: text; */
-    /* -webkit-text-fill-color: transparent; */
+    
+    /* Clipping from here for compatablity with icon mask.*/
+    /* Without the icons being masked, this will be invisible */
+    /* background-clip: text;
+    -webkit-background-clip: text; /* Legacy support */
+
+    color: transparent;
+    -webkit-text-fill-color: transparent; /* Legacy support */
 }
 
 
@@ -95,11 +114,11 @@ body {
     margin: 0 auto;
 }
 
-#art-area > img {
+#art-canvas {
     width: 200px;
     height: 200px;
+    /* background: linear-gradient(var(--angle), var(--color-1), var(--color-2)); */
     /* border: 1px solid black; */
-    /* box-shadow: -10px 10px 3px rgba(0,0,0, 0.8); */
 }
 
 #art-subtitle {

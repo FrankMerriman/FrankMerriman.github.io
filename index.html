@@ -13,11 +13,12 @@
         <!-- State favico -->
         <link rel="icon" href="img/art_sample.png" type="image/png">
 
-
         <!--Downloads custom font from google fonts api-->
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;900&display=swap');
         </style> 
+        
+
 	</head>
 
 	<body>
@@ -60,7 +61,8 @@
             <p>
                 Welcome to my website! Have a piece of computer art!
             </p>
-            <img src = "img/art_sample.png">
+            <canvas id="art-canvas" width="200px" height="200px"></canvas>
+            <script src="script/art.js" defer></script>
             <p id="art-subtitle">
                 <i>(Remember: Art is subjective)</i>
             </p>
