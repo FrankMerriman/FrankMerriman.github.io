@@ -11,7 +11,7 @@
 		<title>Frank Merriman</title>
 
         <!--Link to css style sheet-->
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="style.css">
 
         <!-- State favico -->
         <link rel="icon" href="img/art_sample.png" type="image/png">
@@ -28,20 +28,19 @@
         <div id="menu-bar">
             <ul>
               <li>
-                <a href="../index.html">Home</a>
+                <a href="/">Home</a>
             </li>
               <li>
-                <a href="projects.html">Projects</a>
+                <a href="projects">Projects</a>
             </li>
             <li>
-                <a href="about.html">About</a>
+                <a href="about">About</a>
             </li>
             </ul>
         </div>
-
-
+        
         <div id="under-construction">
-            <img src = "../img/todo.png" alt="Cute cartoon goose holding a butter knife">
+            <img src = "img/todo.png" alt="Cute cartoon goose holding a butter knife">
             <p>This page is still under construction.</p>
             <p>It is guarded by this goose.</p>
         </div>
