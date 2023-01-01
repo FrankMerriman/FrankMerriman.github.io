@@ -7,7 +7,7 @@ function createArt () {
     fillBackgroundColor(canvas, context);
 
     // Random number of shapes
-    var num = Math.floor(Math.random() * 51);
+    var num = Math.ceil(Math.random() * 5);
 
     while (num-- > 0) {
         drawCircle(canvas, context);
