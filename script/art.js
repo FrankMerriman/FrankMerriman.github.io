@@ -1,28 +1,32 @@
 
-/** Generates a random hex value between `00` and `ff` */
-const randomHex = () =>
-  Math.floor(Math.random() * 256)
-    .toString(16)
-    .padStart(2, "0");
+// Create a new piece of art in art-canvas
+function createArt () {
+    var canvas = document.getElementById('art-canvas');
+    var context = canvas.getContext('2d');
 
-/** Uses `randomHex` to generate a random color string */
-const randomColor = () => `#${[...Array(3)].map(randomHex).join("")}`;
+    fillBackgroundColor(canvas, context);
+
+    // Random number of shapes
+    var num = Math.floor(Math.random() * 51);
+
+    while (num-- > 0) {
+        drawCircle(canvas, context);
+        drawRect(canvas, context);
+        drawTriangle(canvas, context);
+    }
+};
 
 
+// Generates a random hex value between `00` and `ff`
+function randomHex () {
+    var num =  Math.floor(Math.random() * 256).toString(16).padStart(2, "0");
 
-// This isn't in a function because idk how to run this otherwise
-var canvas = document.getElementById('art-canvas');
-var context = canvas.getContext('2d');
+    return(num);
+};
 
-fillBackgroundColor(canvas, context);
-
-// Random number of shapes
-var num = Math.floor(Math.random() * 51);
-
-while (num-- > 0) {
-    drawCircle(canvas, context);
-    drawRect(canvas, context);
-    drawTriangle(canvas, context);
+// Uses `randomHex` to generate a random color string
+function randomColor () {
+    return(`#${[...Array(3)].map(randomHex).join("")}`);
 }
   
 function newGradient (context) {

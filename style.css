@@ -62,11 +62,7 @@ body {
     padding-bottom: 8%;
     /* background: linear-gradient(to right, #f06d06, #ffa800); */
 
-    background: linear-gradient(0deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
-    background: -webkit-linear-gradient(0deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%); /* Legacy support */
-
-    background-clip: text;
-    -webkit-background-clip: text; /* Legacy support */
+    
 
     /* -webkit-mask-image: url(email.svg); */
 
@@ -79,13 +75,14 @@ body {
     font-size: 80px;
     text-align:center;
     
-    /* Clipping from here for compatablity with icon mask.*/
-    /* Without the icons being masked, this will be invisible */
-    /* background-clip: text;
-    -webkit-background-clip: text; /* Legacy support */
+    background: linear-gradient(0deg, #6576e7 0%, #8752a3 100%);
+    background: -webkit-linear-gradient(0deg, #6576e7 0%, #8752a3 100%);
+
+    background-clip: text;
+    -webkit-background-clip: text;
 
     color: transparent;
-    -webkit-text-fill-color: transparent; /* Legacy support */
+    -webkit-text-fill-color: transparent;
 }
 
 
