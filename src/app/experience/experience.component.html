@@ -1,0 +1,18 @@
+
+<div class="py-5">
+    <h1 class="display-3">Experience</h1>
+    
+
+    <!-- Display list of all jobs -->
+    <div class="col-lg-6 mx-auto" *ngFor="let job of jobList">
+        <div class="border rounded flex-md-row mb-4 shadow-sm">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-0">{{job.jobTitle}}</h3>
+                <div class="mb-1 text-muted">{{job.jobCompany}}</div>
+                <!-- If end date doesn't exist, subs with 'Ongoing' -->
+                <div class="mb-1 text-muted">{{job.startDate | date}} - {{job.endDate ? (job.endDate | date) : 'Ongoing'}}</div>
+                <p class="card-text mb-auto">{{job.jobDescription}}</p>
+            </div>
+        </div>
+    </div>
+</div>
