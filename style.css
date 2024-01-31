@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&display=swap');
 
 body {
-    background-color: #F9DBBD;
+    background-color: #7DBBC3; /* F9DBBD */
     color: #D36060;
 }
 a:hover {
@@ -36,7 +36,7 @@ b {
 .blob {
     width: 200px;
     height: 200px;
-    background-color: #7DBBC3;
+    background-color: #F9DBBD; /* 7DBBC3 */
     border-radius: 50%;
     position: absolute;
     animation: blobby 5s infinite;
