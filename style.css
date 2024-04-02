@@ -28,7 +28,7 @@ b {
     align-items: center;
     text-align: center;
     height: 100vh;
-    width: 35%; /* Adjust this to control the width of the div */
+    width: 28vw; /* Adjust this to control the width of the div */
     margin: 0 auto; /* Centers the div horizontally with gutters on the side */
     font-family: "Bricolage Grotesque", cursive;
 }
@@ -39,6 +39,9 @@ b {
     background-color: #F9DBBD; /* 7DBBC3 */
     border-radius: 50%;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     animation: blobby 5s infinite;
     z-index: -1;
 }
@@ -55,8 +58,8 @@ b {
 }
 
 #blob1 {
-    top: 10%;
-    right: 30%;
+    /* top: 10%; */
+    /* right: 30%; */
     width: 600px;
     height: 600px;
 }
